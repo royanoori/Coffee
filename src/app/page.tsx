@@ -1,10 +1,12 @@
-function addProductToCart(title: string, price: number) {
-  const product = title + price;
-  console.log("Product added to cart:", product);
-}
+import { Button } from "@/components/ui/button";
 
 function page() {
-  return addProductToCart("Product 1", 19.99);
+  return (
+    <div>
+      <h1>My App</h1>
+      <Button variant={"default"}>Add to Cart</Button>
+    </div>
+  );
 }
 
 export default page;
